@@ -1,0 +1,30 @@
+// 可以在 axios 返回拦截器中定制全局信息
+const httpStaus = {
+  200: ['OK', '请求成功', '请求成功'],
+  201: ['Created', '请求成功，新的资源已经创建', '资源创建成功'],
+  202: ['Accepted', '请求成功，但尚未处理结束', '请求成功'],
+  204: ['No Content', '没有内容', '响应内容为空'],
+  300: ['Multiple', '存在多个资源'],
+  301: ['Moved Permanently', '请求的资源被永久转移', '资源已被永久转移'],
+  302: ['Found', '请求的资源被暂时转移', '资源被暂时转移'],
+  303: ['See Other', '引用他出', '重定向请求'],
+  304: ['Not Modified', '自上一次访问后没有发生更新'],
+  307: ['Temporary Redirect', '请求的资源被暂时转移', '资源被暂时转移'],
+  400: ['Bad Request', '请求不正确', '请求参数不正确'],
+  401: ['Unauthorized', '需要认证', '未登录'],
+  403: ['Forbidden', '禁止访问', '没有权限'],
+  404: ['Not Found', '没有找到指定的资源', '资源未找到'],
+  405: ['Method Not Allowed', '无法实用指定的方法', '请求方法错误'],
+  406: ['Not Acceptable', '同 Accept 相关的首部里含有无法处理的内容', '无法返回指定格式数据'],
+  408: ['Request Timeout', '请求在规定时间内没有处理结束', '请求超时'],
+  409: ['Confict', '资源存在冲突', '资源或数据已经存在'],
+  410: ['Gone', '指定的资源已经不存在', '资源已经不存在'],
+  413: ['Request Entity Too Large', '请求消息体太大', '请求体过大'],
+  414: ['Request-URI Too Long', '请求的URI太长', 'URI 过长'],
+  415: ['Unsupported Media Type', '不支持指定的媒体类型', '错误的数据类型'],
+  429: ['Too Many Request', '请求次数过多', '超过访问次数'],
+  500: ['Internal Server Error', '服务器端发生错误', '服务异常'],
+  503: ['Service Unavailable', '服务器暂时停止运行', '暂停服务'],
+}
+
+export default httpStaus

@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "dom",
+      "DOM",
+      "DOM.iterable",
+      "ES2020"
+    ],
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ]
+  },
+  "include": [
+    "src",
+    "typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "template",
+    "webpack"
+  ]
+}

@@ -1,0 +1,13 @@
+
+// 旋转动画
+@keyframes whirlright {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.whirl-right {
+  animation: whirlright 3s linear infinite;
+}

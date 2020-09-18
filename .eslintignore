@@ -1,0 +1,11 @@
+build/
+docs/
+node_modules/
+dist/
+mock/
+dll/
+template/
+assets/
+*.ts
+*.tsx
+mock/
